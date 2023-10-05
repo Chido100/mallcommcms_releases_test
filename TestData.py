@@ -1,6 +1,6 @@
 # Login Details
-valid_email = 'chidozie.amefule@toolboxmarketing.com'
-password = 'Jayjay@okocha10'
+valid_email = ''
+password = ''
 
 # Add Centre Name
 centre_name = 'QAAutoTestCentre1'
@@ -8,9 +8,9 @@ centre_name = 'QAAutoTestCentre1'
 # Add new people
 first_name = 'Test'
 last_name = 'Tester4'
-people_email = 'chidozie.amefule+111@toolboxmarketing.com'
-people_password = 'Password01!'
-people_confirm_password = 'Password01!'
+people_email = ''
+people_password = ''
+people_confirm_password = ''
 
 # Clone Centre name
 cloned_centre_name = 'QA AutoCloned Centre'
@@ -18,7 +18,7 @@ cloned_centre_name = 'QA AutoCloned Centre'
 # Add CMS User
 cms_user_firstname = 'Test1'
 cms_user_lastname = 'Tester1'
-cms_user_email = 'chidozie.amefule+204@toolboxmarketing.com'
+cms_user_email = ''
 
 # New ticket
 ticket_title = 'QA Ticket AutoTest'

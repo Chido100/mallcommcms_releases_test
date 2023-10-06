@@ -167,7 +167,18 @@ class Locator(object):
     clone_complete = "//h2[@class='swal2-title']"
 
     # Templates
-    templates = "//ul[@class='dropdown-menu']//span[contains(text(), 'Templates')]"
+    templates = "//ul[@class='dropdown-menu']//li//a[contains(text(), 'Templates')]"
+    add_new_template_button = "//div[@class='pull-right']//i"
+    template_name = "//div[@class='form-group']//input[@id='name']"
+    template_display_name = "//div[@class='form-group']//input[@id='displayname']"
+    template_data = "//div[@class='form-group']//div//p"
+    template_save_button = "//div[@class='form-group']//button[contains(text(), 'Save')]"
+
+
+
+    
+
     # Remove Centre API Keys
     remove_centre_api_keys = "//ul[@class='dropdown-menu']//span[contains(text(), 'Remove Centre API Keys')]"
+
     # Ticketing approval flows

@@ -30,3 +30,8 @@ place_of_work = "QA Dept"
 # New Item
 item_title = "QA Item 1"
 
+# Templates
+template_name = "QA Template Test"
+template_display_name = "QA Template Test"
+template_data = "This is a template test."
+

@@ -1,16 +1,27 @@
-__author__ = 'Chidozie Amefule'
-
+import pytest
+from selenium import webdriver
 from selenium.webdriver.common.by import By
-from Tests.TestBase.EnvironmentSetup import EnvironmentSetup
-from Tests.PageObject.Locators import Locator
+from Drivers.drivers import driver_service
 from time import sleep
+import datetime
+from Tests.PageObject.Locators import Locator
 import TestData
 
 
-class TestLogin(EnvironmentSetup):
 
-    def test_login(self):
-        driver = self.driver
+@pytest.fixture   
+def test_login():
+
+        # Setup
+        driver = webdriver.Chrome(service=driver_service)
+        driver.set_window_size(1240, 1080)
+        driver.get("https://release-cms.mallcomm.co.uk/")
+        driver.implicitly_wait(20)
+
+        print('Run started at : ' + str(datetime.datetime.now()))
+        print('Test Environment Set Up')
+        print('-----------------------')
+        
 
         # login procedure
         enter_email = driver.find_element(By.XPATH, Locator.login_email)
@@ -33,3 +44,11 @@ class TestLogin(EnvironmentSetup):
         sleep(2)
 
         driver.find_element(By.XPATH, Locator.select_database).click()
+        yield driver
+
+        # TearDown
+        print('---------------------')
+        print('Test Environment Destroyed')
+        print('Run Completed at: ' + str(datetime.datetime.now()))
+        driver.close()
+        driver.quit()  

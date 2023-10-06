@@ -17,3 +17,7 @@ class TestAddItem:
         # Add New Item
         driver.find_element(By.XPATH, Locator.items_dropdown).click()
         driver.find_element(By.XPATH, Locator.add_new_item).click()
+        driver.find_element(By.XPATH, Locator.item_title).send_keys(TestData.item_title)
+        driver.find_element(By.XPATH, Locator.save_continue_button).click()
+        
+

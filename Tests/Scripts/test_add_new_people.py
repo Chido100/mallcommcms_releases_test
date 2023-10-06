@@ -37,3 +37,5 @@ class TestAddPeople:
         driver.find_element(By.XPATH, Locator.selected_role).click()
 
         driver.find_element(By.XPATH, Locator.create_button).click()
+        assert "/people/edit-person/" in driver.current_url
+        print("Successfully added new people.")

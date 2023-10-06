@@ -76,6 +76,7 @@ class Locator(object):
     add_new_item = "//li[4][@class='dropdown open']//li//span[contains(text(),'Add new item')]"
     item_title = "//div[@class='row']//input[@id='title']"
     save_continue_button = "//button[@name='create']"
+    item_message = ""
 
     # Critical Comms
     critical_comms = "//li[4][@class='dropdown open']//li//a[contains(text(),'Critical Comms')]"

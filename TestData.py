@@ -14,6 +14,7 @@ people_confirm_password = 'Password01!'
 
 # Clone Centre name
 cloned_centre_name = 'QA AutoCloned Centre'
+cloned_centre_name_2 = 'QA AutoCloned Centre 2'
 
 # Add CMS User
 cms_user_firstname = 'Test1'
@@ -34,4 +35,7 @@ item_title = "QA Item 1"
 template_name = "QA Template Test"
 template_display_name = "QA Template Test"
 template_data = "This is a template test."
+
+# Create New Button
+button_name = 'QA AutoTest Button'
 

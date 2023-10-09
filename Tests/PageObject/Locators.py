@@ -121,12 +121,20 @@ class Locator(object):
     add_cms_role_toggle = "//div[@class='material-switch pull-right']//input[@id='basic']"
     add_cms_user_create_button = "//div[@id='addCmsUser']//button[contains(text(), 'Add CMS user')]"
     add_cms_user_success = "//div[@class='alert alert-success']"
+    # CMS User Roles
+    cms_user_roles = ""
 
     # Your Centre
     your_centre_dropdown = "//ul[@class='dropdown-menu']//a[contains(text(), 'Your centre')]"
+    manage_your_buttons = "//ul[@class='dropdown-menu']//span[contains(text(), 'Manage your buttons')]"
+    add_new_button = "//a[@class='btn btn-default']"
+    button_name = "//div[@class='input-group']//input[@name='name']"
+    create_button_button = "//input[@name='add-button']"
+
+
     # System Config
     system_config_dropdown = "//ul[@class='dropdown-menu']//a[contains(text(), 'System config')]"
-    centre_config = ""
+    centre_config = "//ul[@class='dropdown-menu']//li[@class='dropdown-submenu']//span[contains(text(), 'Centre config')]"
 
     # Ticket Permissions
     ticket_permissions = "//ul[@class='dropdown-menu']//span[contains(text(), 'Ticket permissions')]"
@@ -165,6 +173,8 @@ class Locator(object):
     create_clone_button = "//div[@class='pull-right']//button[@id='clone_centre']"
     agreement_modal = "//div[@class='modal-content']//button[contains(text(), 'I agree')]"
     clone_complete = "//h2[@class='swal2-title']"
+    clone_centre_plus_sign = "//span[@class='glyphicon glyphicon-plus pointer text-info f20 duplicate']"
+
 
     # Templates
     templates = "//ul[@class='dropdown-menu']//li//a[contains(text(), 'Templates')]"

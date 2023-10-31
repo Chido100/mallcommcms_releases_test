@@ -39,3 +39,8 @@ template_data = "This is a template test."
 # Create New Button
 button_name = 'QA AutoTest Button'
 
+# Virtual Onboarding
+vo_first_name = 'QA3'
+vo_last_name = 'QATester3'
+vo_email_address = 'chidozie.amefule+301@toolboxmarketing.com'
+

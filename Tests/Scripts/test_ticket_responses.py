@@ -12,4 +12,8 @@ class TestTicketResponses:
     def test_ticket_responses(self, test_login):
         driver = test_login
 
+
+        # Test Ticket Responses
+        driver.find_element()
+
         

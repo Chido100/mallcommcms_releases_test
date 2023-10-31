@@ -66,6 +66,15 @@ class Locator(object):
     # Virtual Onboarding
     virtual_onboarding = "//li[3][@class='dropdown open']//li//span[contains(text(),'Virtual Onboarding')]"
     import_contacts = "//div[@class='row']//a[contains(text(), 'Import Contacts')]"
+    vo_choose_file_button = "//div[@class='col-md-12']//input[@name='file']"
+    vo_upload_button = "//div[@class='col-md-12']//button[@type='submit']"
+    invite_new_contact = "//div[@class='col-xs-6']//button"
+    vo_first_name = "//div[@class='col-md-12']//input[@name='first_name']"
+    vo_last_name = "//div[@class='col-md-12']//input[@name='last_name']"
+    vo_email_address = "//div[@class='col-md-12']//input[@name='email_address']"
+    vo_invite_button = "//div[@class='modal-content']//button[contains(text(), 'Invite')]"
+    invite_success_alert = "//div[@class='col-xs-12']//div[contains(text(), 'The new contact has been invited')]"
+
 
     # Items
     items_dropdown = "//li[4][@class='dropdown']"

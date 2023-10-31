@@ -42,3 +42,4 @@ class TestAddCentre:
         # confirm centre is created
         assert "/centre/config/" in driver.current_url
         print("Successfully created a new centre!")
+        

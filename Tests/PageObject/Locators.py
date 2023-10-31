@@ -7,7 +7,7 @@ class Locator(object):
     login_next_button = "//div[@class='login-container']//button"
     login_with_toolbox = "//span[@class='col-span-8']"
     choose_account = "//div[@class='WBW9sf']//div[contains(text(),'Chidozie Amefule')]"
-    select_database = "//div[@class='container p30']//div[27]//button"
+    select_database = "//div[@class='container p30']//div[26]//button"
     print_email = "//div[@class='aCsJod oJeWuf']//input[@id='identifierId']"
     print_email_next_button = "//div[@class='F9NWFb']//span[@class='VfPpkd-vQzf8d']"
     print_password = "//div[@id='password']//input"

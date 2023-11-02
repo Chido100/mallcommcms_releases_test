@@ -148,6 +148,14 @@ class Locator(object):
     # Ticket Permissions
     ticket_permissions = "//ul[@class='dropdown-menu']//span[contains(text(), 'Ticket permissions')]"
     add_permissions_button = "//button[contains(text(), 'Add permissions')]"
+    create_toggle_permission = "//div[@class='material-switch pull-right']//input[@id='create']"
+    permission_add_comment = "//div[@class='row mt20']//a[contains(text(), 'Add Comment')]"
+    comment_title_1 = "//input[@name='comment_title']"
+    comment_title_2 = "//input[@name='comment_reason']"
+    comment_title_3 = "//input[@name='comment_requested_by']"
+    permission_add_comment_button = "//button[contains(text(), 'Add Comment')]"
+    view_log = "//button[@id='ViewLogListButton']"
+    view_log_close_button = "//div[@class='modal-footer']//div[@class='mt30']//button"
     
 
     # Ticket Notifications

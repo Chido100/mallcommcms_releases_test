@@ -12,7 +12,7 @@ import TestData
 @pytest.fixture   
 def test_login():
 
-        # Setup
+        # Setup Environment
         driver = webdriver.Chrome(service=driver_service)
         driver.set_window_size(1240, 1080)
         driver.get("https://release-cms.mallcomm.co.uk/")
@@ -46,7 +46,7 @@ def test_login():
         driver.find_element(By.XPATH, Locator.select_database).click()
         yield driver
 
-        # TearDown
+        # TearDown Environment
         print('---------------------')
         print('Test Environment Destroyed')
         print('Run Completed at: ' + str(datetime.datetime.now()))

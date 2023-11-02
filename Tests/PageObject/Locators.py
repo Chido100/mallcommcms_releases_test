@@ -147,10 +147,24 @@ class Locator(object):
 
     # Ticket Permissions
     ticket_permissions = "//ul[@class='dropdown-menu']//span[contains(text(), 'Ticket permissions')]"
+    add_permissions_button = "//button[contains(text(), 'Add permissions')]"
+    
+
     # Ticket Notifications
     ticket_notifications = "//ul[@class='dropdown-menu']//span[contains(text(), 'Ticket notifications')]"
+
     # Ticket Responses
     ticket_responses = "//ul[@class='dropdown-menu']//span[contains(text(), 'Ticket responses')]"
+    add_response_button = "//div[@class='col-xs-12 col-sm-8']//a"
+    response_button_dropdown = "//div[@class='form-group']//span[contains(text(), '...')]"
+    selected_response_button = "//li[contains(text(), 'Standard Ticket Button')]"
+    response_order = "//div[@class='form-group']//input[@name='response_order']"
+    response_title = "//input[@id='name']"
+    response_text = "//div[@class='form-group']//input[@name='response_text']"
+    response_add_button = "//div[@class='form-group']//button[@name='submit']"
+
+
+
     # Ticket Reassign Statuses
     ticket_reassign_statuses = "//ul[@class='dropdown-menu']//span[contains(text(), 'Ticket reassign statuses')]"
     # Form Builder

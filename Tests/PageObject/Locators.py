@@ -58,6 +58,13 @@ class Locator(object):
     # CRM
     crm = "//li[3][@class='dropdown open']//li//span[contains(text(),'CRM')]"
     crm_page = "//div[@class='pull-left']//h3[contains(text(), 'CRM')]"
+    add_new_contact = "//div[@class='pull-right']//button[@id='addContactButton']"
+    crm_contact_name = "//div[@class='modal-content']//input[@id='contact_name']"
+    crm_store = "//select[@name='select_localid']"
+    crm_selected_store = "//select[@name='select_localid']//option[contains(text(), 'ADIDAS')]"
+    crm_type_of_contact = "//select[@id='contact_type_id']"
+    crm_selected_type_contact = "//select[@id='contact_type_id']//option[contains(text(), 'Store Managers')]"
+    crm_add_contact_button = "//button[@id='add_new_contact']"
 
     # Awards
     awards = "//li[3][@class='dropdown open']//li//span[contains(text(),'Awards')]"
@@ -85,13 +92,30 @@ class Locator(object):
     add_new_item = "//li[4][@class='dropdown open']//li//span[contains(text(),'Add new item')]"
     item_title = "//div[@class='row']//input[@id='title']"
     save_continue_button = "//button[@name='create']"
-    item_message = ""
+    add_content_save_and_next_button = "//div[@class='col-xs-12 text-right']//button[contains(text(), 'Save and next')]"
+    assign_button_toggle = "//div[@class='material-switch pull-right']/input[@id='43724']"
+    assign_button_save_and_next_button = "//div[@class='col-xs-12 text-right']//button[contains(text(), 'Save and next')]"
+    response_buttons_save_and_next_button = "//div[@class='col-xs-12 text-right']//button[contains(text(), 'Save and next')]"
+    image_and_docs_save_and_next_button = "//div[@class='col-xs-12 text-right']//button[contains(text(), 'Save and next')]"
+    add_item_skip_button = "//div[@class='col-xs-12 text-right']//a"
+    add_new_item_publish = "//div[@class='col-xs-12 text-right']//button[contains(text(), 'Publish')]"
+
 
     # Critical Comms
     critical_comms = "//li[4][@class='dropdown open']//li//a[contains(text(),'Critical Comms')]"
 
     # Mallcomm Mail
     mallcomm_mail = "//li[4][@class='dropdown open']//li//span[contains(text(),'Mallcomm mail')]"
+    add_new_thread_button = "//div[@class='top-right']//a"
+    mail_recipient_store = "//span[@title='Store']"
+    mail_recipient_selected_store = "//li[contains(text(), 'Cms user')]"
+    mail_recipient_receiver = "//span[@id='select2-select-2-container']"
+    mail_recipient_selected_receiver = "//li[contains(text(), 'Chidozie Amefule')]"
+    mail_select_button = "//span[@id='select2-category_type-container']"
+    mail_selected_button = "//li[contains(text(), 'MallcommMail Button')]"
+    mail_subject = "//input[@id='title']"
+    mail_message = "//div[@class='form-group col-xs-12']//textarea"
+    add_mail_message_button = "//button[@id='add_mail']"
 
     # Ticketing
     ticketing_dropdown = "//li[5][@class='dropdown']//span[contains(text(),'Ticketing')]"
@@ -113,13 +137,14 @@ class Locator(object):
     ticket_creator_name_field = "//input[@name='responsable']"
     ticket_details = "//textarea[@name='action']"
     ticket_end_date = "//input[@name='enddate']"
-    selected_end_date = "//div[@class='calendar-table']//td[contains(text(), '16')]"
+    selected_end_date = "//td[@class='active start-date active end-date available' and @data-title='r3c5']"
     date_apply = "//button[@class='applyBtn btn btn-sm btn-success']"
     place_of_work = "//input[@name='place_of_action']"
     ticket_add_button = "//input[@name='add']"
 
     # Manage
     manage_dropdown = "//li[8][@class='dropdown']"
+
     # CMS Users
     cms_users_dropdown = "//ul[@class='dropdown-menu']//a[contains(text(), 'CMS users')]"
     all_cms_users = "//ul[@class='dropdown-menu']//span[contains(text(), 'All CMS users')]"
@@ -130,8 +155,12 @@ class Locator(object):
     add_cms_role_toggle = "//div[@class='material-switch pull-right']//input[@id='basic']"
     add_cms_user_create_button = "//div[@id='addCmsUser']//button[contains(text(), 'Add CMS user')]"
     add_cms_user_success = "//div[@class='alert alert-success']"
+    
     # CMS User Roles
-    cms_user_roles = ""
+    cms_user_roles = "//span[contains(text(), 'CMS user roles')]"
+    cms_new_role_name = "//input[@id='name']"
+    cms_role_submit_button = "//input[@type='submit']"
+    confirm_role_created = "//tbody//tr//td[contains(text(), 'Visitor')]"
 
     # Your Centre
     your_centre_dropdown = "//ul[@class='dropdown-menu']//a[contains(text(), 'Your centre')]"
@@ -215,11 +244,29 @@ class Locator(object):
     template_data = "//div[@class='form-group']//div//p"
     template_save_button = "//div[@class='form-group']//button[contains(text(), 'Save')]"
 
-
-
+    # Manage your centre
+    manage_your_centre = "//span[contains(text(), 'Manage your centre')]"
+    manage_your_centre_update_button = "//input[@name='update-centre']"
+    manage_your_centre_update_success = "//div[@class='alert alert-success']"
     
 
     # Remove Centre API Keys
     remove_centre_api_keys = "//ul[@class='dropdown-menu']//span[contains(text(), 'Remove Centre API Keys')]"
 
     # Ticketing approval flows
+
+
+    # Access Level
+    manage_access_level = "//span[contains(text(), 'Manage access levels')]"
+    new_access_level = "//input[@id='name']"
+    access_level_create_button = "//button[@id='createGroup']"
+    access_level_success_alert = "//div[@class='alert alert-success']"
+
+
+    # Tags Management
+    tags_management = "//a[contains(text(), 'Tags management')]"
+    centre_tags = "//a//span[contains(text(), 'Centre tags')]"
+    add_tag_button = "//button[contains(text(), 'Add tag')]"
+    tag = "//input[@id='tag']"
+    display_label = "//input[@name='display_label']"
+    add_tag_save_button = ""

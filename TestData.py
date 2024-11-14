@@ -1,25 +1,25 @@
 # Login Details
-valid_email = 'chidozie.amefule@toolboxmarketing.com'
-password = 'Jayjay@okocha10'
+valid_email = ''
+password = ''
 
 # Add Centre Name
-centre_name = 'QAAutoTestCentre1'
+centre_name = '_QAAutoTestCentre1'
 
 # Add new people
 first_name = 'Test'
 last_name = 'Tester4'
-people_email = 'chidozie.amefule+110@toolboxmarketing.com'
-people_password = 'Password01!'
-people_confirm_password = 'Password01!'
+people_email = ''
+people_password = ''
+people_confirm_password = ''
 
 # Clone Centre name
-cloned_centre_name = 'QA AutoCloned Centre'
-cloned_centre_name_2 = 'QA AutoCloned Centre 2'
+cloned_centre_name = '_QA AutoCloned Centre'
+cloned_centre_name_2 = '_QA AutoCloned Centre 2'
 
 # Add CMS User
 cms_user_firstname = 'Test1'
 cms_user_lastname = 'Tester1'
-cms_user_email = 'chidozie.amefule+201@toolboxmarketing.com'
+cms_user_email = ''
 
 # New ticket
 ticket_title = 'QA Ticket AutoTest'
@@ -42,7 +42,7 @@ button_name = 'QA AutoTest Button'
 # Virtual Onboarding
 vo_first_name = 'QA3'
 vo_last_name = 'QATester3'
-vo_email_address = 'chidozie.amefule+301@toolboxmarketing.com'
+vo_email_address = ''
 
 
 # Ticket Response
@@ -70,3 +70,6 @@ cms_new_role_name = 'Visitor'
 # Centre tags
 tag = "QA Auto Tag"
 display_label = "QA Auto Tag Label"
+
+
+

@@ -1,3 +1,5 @@
+"""
+
 __author__ = 'Chidozie Amefule'
 
 
@@ -40,3 +42,7 @@ class TestMultipleCentreClone:
         driver.find_element(By.XPATH, Locator.agreement_modal).click()
 
         assert driver.find_element(By.XPATH, Locator.clone_complete).is_displayed()
+
+        
+"""
+

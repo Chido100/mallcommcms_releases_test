@@ -137,13 +137,14 @@ class Locator(object):
     ticket_creator_name_field = "//input[@name='responsable']"
     ticket_details = "//textarea[@name='action']"
     ticket_end_date = "//input[@name='enddate']"
-    selected_end_date = "//div[@class='calendar-table']//td[contains(text(), '16')]"
+    selected_end_date = "//td[@class='active start-date active end-date available' and @data-title='r3c5']"
     date_apply = "//button[@class='applyBtn btn btn-sm btn-success']"
     place_of_work = "//input[@name='place_of_action']"
     ticket_add_button = "//input[@name='add']"
 
     # Manage
     manage_dropdown = "//li[8][@class='dropdown']"
+
     # CMS Users
     cms_users_dropdown = "//ul[@class='dropdown-menu']//a[contains(text(), 'CMS users')]"
     all_cms_users = "//ul[@class='dropdown-menu']//span[contains(text(), 'All CMS users')]"
@@ -243,8 +244,10 @@ class Locator(object):
     template_data = "//div[@class='form-group']//div//p"
     template_save_button = "//div[@class='form-group']//button[contains(text(), 'Save')]"
 
-
-
+    # Manage your centre
+    manage_your_centre = "//span[contains(text(), 'Manage your centre')]"
+    manage_your_centre_update_button = "//input[@name='update-centre']"
+    manage_your_centre_update_success = "//div[@class='alert alert-success']"
     
 
     # Remove Centre API Keys

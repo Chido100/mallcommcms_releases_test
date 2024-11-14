@@ -41,3 +41,4 @@ class TestAddCMSUser:
         sleep(2)
 
         assert driver.find_element(By.XPATH, Locator.add_cms_user_success).is_displayed()
+

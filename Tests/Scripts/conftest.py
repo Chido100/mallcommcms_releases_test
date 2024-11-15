@@ -1,5 +1,6 @@
 import pytest
 from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from time import sleep
@@ -11,10 +12,10 @@ import TestData
 @pytest.fixture(scope="function")
 def test_login():
     # Define driver_service inside the fixture for a unique instance per test
-    driver_service = Service(executable_path="/Users/admin/Downloads/chromedriver_mac64/chromedriver")  # Adjust path to chromedriver as needed
-    driver = webdriver.Chrome(service=driver_service)
+    #driver_service = Service(executable_path="/Users/admin/Downloads/chromedriver_mac64/chromedriver")  # Adjust path to chromedriver as needed
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
     driver.set_window_size(1240, 1080)
-    driver.get("https://dev5-cms.mallcomm.co.uk/")
+    driver.get("https://release-cms.mallcomm.co.uk/")
     driver.implicitly_wait(20)
 
     print('Run started at : ' + str(datetime.datetime.now()))
